@@ -29,6 +29,7 @@ body {
 }
 
 section {
+    background-color: #E0FFFF;
     padding-bottom: 120px;
     padding-top: 100px;
 }
@@ -159,7 +160,8 @@ padding:0px;
     SERVICES STYLES
 ==================================*/
 #services {
-    background-color: rgba(237, 237, 237, 1);
+    background-color: #E0FFFF;
+    /* background-color: rgba(237, 237, 237, 1); */
 }
 
     #services i {
@@ -285,9 +287,9 @@ padding:0px;
 /* =============================================================
   TEAM SECTION STYLES
  ============================================================ */
-#team {
+/*#team {
     background-color: rgba(237, 237, 237, 1);
-}
+}*/
 
 .media img {
     margin-right: 40px;
@@ -327,7 +329,8 @@ footer {
     font-size: 15px;
     text-align: center;
     font-weight: 900;
-    background-color: rgba(237, 237, 237, 1);
+    background-color: #E0FFFF;
+    /* background-color: rgba(237, 237, 237, 1); */
 }
 
     footer a, footer a:hover {
