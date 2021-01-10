@@ -80,7 +80,7 @@ h2 {
     background-color: goldenrod;
     color: midnightblue;
     margin: auto;
-    margin-top: 24%;
+    margin-top: 24.5%;
     display: inline-block;
     height: 100%;
 }
@@ -95,7 +95,6 @@ h2 {
 .deux {
     padding: 0;
     width: 30%;
-    height: 100%;
 }
 
 .deux img {
@@ -104,6 +103,11 @@ h2 {
     width: 35%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.cath {
+    margin-top: 88.05%;
+    height: 358%;
 }
 
 .trois {
