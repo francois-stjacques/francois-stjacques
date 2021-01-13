@@ -8,17 +8,27 @@
 </head>
 <body>
     <header>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil & nouvelles</a></li>
+                <li><a href="#">Produits & services</a></li>
+                <li><a href="#">Saisons</a></li>
+                <li><a href="#">Album photo</a></li>
+                <li><a href="#"></a></li>
+                <li id="clair"><a href="#">Couleur par défaut (clair)</a></li>
+                <li id="sombre"><a href="#">Couleur sombre</a></li>
+            </ul>
+        </nav>
         <div class="carreCouleur"></div>
         <img src="images/index__element44.jpg" alt="cheval">
-        <div></div>
     </header>
     <div class="bloc">
         <h3>Bienvenue</h3>
         <p>Au coeur de la campagne lavalloise,  nous voulons vous faire découvrir nos passions: les chevaux et la nature.<br><br>
             Dans un cadre bien établi, en milieu périurbain, la Ferme L'Auteuilloise est un complexe agrotouristique qui personnalise ses programmes d'activités selon les goûts et l'âge de ses visiteurs.
         </p>
-        <h3>Visite virtuelle</h3>
-        <img src="images/aerien.jpg" alt="aerien">
+        <h3 onclick="cacheImg()">Visite virtuelle</h3>
+        <img src="images/aerien.jpg" alt="aerien" id="photo">
         <h3>Calendrier des évènements</h3>
         <p> Vu la situation en zone rouge<br>
             Les randonnées sont annulées pour une période indéterminés <br><br>
@@ -130,5 +140,6 @@
             Régie: Le corps<br><br>
         </p>
     </div>
+    <script src="js/base.js"></script>
 </body>
 </html>
