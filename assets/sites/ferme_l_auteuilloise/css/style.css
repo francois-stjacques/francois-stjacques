@@ -33,6 +33,7 @@ ul {
 
 li {
     display: inline-block;
+    padding-left: 15px;
 }
 
 img {
