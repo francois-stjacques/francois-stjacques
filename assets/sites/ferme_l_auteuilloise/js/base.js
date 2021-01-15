@@ -14,8 +14,8 @@ function cacheImg() {
         let titre = document.querySelectorAll('h3');
         let cCouleur = document.querySelector('.carreCouleur');
         let textuel = document.querySelectorAll('p');
-        body.style.backgroundColor = "lightgreen";
-        cCouleur.style.backgroundColor = "darkturquoise";
+        body.style.backgroundColor = "peachpuff";
+        cCouleur.style.backgroundColor = "paleturquoise";
 
         for (i = 0; i < titre.length; i++){
             titre[i].style.color = "darkgoldenrod";
@@ -34,7 +34,7 @@ function cacheImg() {
         let cCouleur1 = document.querySelector('.carreCouleur');
         let textuel1 = document.querySelectorAll('p');
         body1.style.backgroundColor = "black";
-        cCouleur1.style.backgroundColor = "yellow";
+        cCouleur1.style.backgroundColor = "grey";
 
         for (k = 0; k < titre1.length; k++){
             titre1[k].style.color = "white";
