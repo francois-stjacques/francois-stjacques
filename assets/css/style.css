@@ -42,6 +42,8 @@ section {
 
 .set-bk-clr {
     background-color: #228B22;
+    /* Couleur du conteur
+    border-color: #228B22; */
 }
 
 .clr-set {
@@ -70,9 +72,8 @@ NAVBAR STYLES
 
 .navbar-brand:hover {
     animation-name: nom;
-    animation-duration: 2s;
-
-    /* transition-duration: 1s; */
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes nom {
@@ -82,7 +83,7 @@ NAVBAR STYLES
     
     50% {
         transform: scale(1.25);
-        color: darkgreen;
+        color: darkgoldenrod;
     }
 
     to {
