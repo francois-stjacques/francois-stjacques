@@ -65,9 +65,32 @@ NAVBAR STYLES
     text-transform: uppercase;
 }
 .navbar-brand {
-padding:0px;
-
+    padding:0px;
 }
+
+.navbar-brand:hover {
+    animation-name: nom;
+    animation-duration: 2s;
+
+    /* transition-duration: 1s; */
+}
+
+@keyframes nom {
+    from {
+        color: white;
+    }
+    
+    50% {
+        transform: scale(1.25);
+        color: darkgreen;
+    }
+
+    to {
+        transform: scale(1);
+        color: white;
+    }
+}
+
     .navbar-brand img {
         height:50px;
     }
