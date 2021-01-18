@@ -44,3 +44,23 @@ function cacheImg() {
             textuel1[l].style.backgroundColor = "grey";
         }
     });
+
+function dCourante() {
+    var journee = new Date();
+    var mois = new Array();
+    mois[0] = "janvier";
+    mois[1] = "février";
+    mois[2] = "mars";
+    mois[3] = "avril";
+    mois[4] = "mai";
+    mois[5] = "juin";
+    mois[6] = "juillet";
+    mois[7] = "août";
+    mois[8] = "septembre";
+    mois[9] = "octobre";
+    mois[10] = "novembre";
+    mois[11] = "décembre";
+    var m = mois[journee.getMonth()];
+    var s = journee.toLocaleTimeString();
+    document.getElementById("jourActuel").innerHTML = (journee.getDate() + " " + m + " " + journee.getFullYear() + " " + s);
+}
