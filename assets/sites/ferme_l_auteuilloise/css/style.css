@@ -63,6 +63,19 @@ img {
     z-index: 0;
 }
 
+section {
+    margin: 0;
+    padding: 0;
+}
+
+section:nth-child(1) {
+    background-color: lightcyan;
+}
+
+section:nth-child(3) {
+    background-color: aliceblue;
+}
+
 h3 {
     cursor: pointer;
     color: darkgoldenrod;
@@ -83,3 +96,7 @@ p {
     background-color: burlywood;
     border-radius: 7.5px;
 }
+
+/*p:nth-child(5) {
+    background-color: red;
+}*/
