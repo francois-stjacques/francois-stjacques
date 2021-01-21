@@ -24,6 +24,10 @@ body {
     line-height: 25px;
 }
 
+p {
+    text-align: justify;
+}
+
 .pad-bottom {
     padding-bottom: 60px;
 }
@@ -181,6 +185,7 @@ NAVBAR STYLES
         font-size: 12px;
         padding-bottom: 40px;
         text-transform: uppercase;
+        text-align: justify;
     }
 
 /*================================
@@ -200,6 +205,10 @@ NAVBAR STYLES
     #services h4 {
         padding-bottom: 5px;
         padding-top: 15px;
+    }
+
+    .col-md-3 {
+        text-align: justify;
     }
 
     .col-md-3 img {
