@@ -1,0 +1,204 @@
+#ve-evenements{
+    > .container{
+
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: auto auto;
+        margin: 40px auto;
+        padding: 0 40px;
+        padding-top: 100px;
+
+        > div, > a{
+            grid-row-start: 2;
+            grid-row-end: 2;
+        }
+    
+        .evenement-premier{
+            position: relative;
+            color: white !important;
+            
+            &:hover{
+                color: white !important;
+                .img-evenement{
+                    filter: grayscale(0%) !important;
+                }
+                &:after{
+                    z-index: 0;
+                    position: absolute;
+                    content: " ";
+                    box-sizing: border-box;
+                    width: 100%;
+                    height: 100%;
+                    border: 2px solid rgba(#FFF, 0.75);
+                    transform: translateY(-100%);
+                }
+            }
+    
+            .parent-evenement{
+                border-radius: 7px 0 0 7px;
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 450px;
+    
+                .parent-image{
+                    
+                    height: 100%;
+                    overflow: hidden;
+                    
+                    .img-evenement{
+    
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+    
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                        filter: grayscale(100%);
+                        transition: filter 0.2s;
+                    }
+                }
+    
+                h1{
+                    width: 100%;
+                    position: absolute;
+                    display: block;
+                    text-align: center;
+                    bottom: 0;
+                    background: rgba(#111, 1);
+                    padding: 15px;
+                    font-size: calc(14px + 1.2vw);
+                    text-shadow: 1px 1px 5px black !important;
+    
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    
+        .autres-evenements{
+            /*margin: 40px 0;*/
+    
+            display: flex;
+            flex-direction: column;
+    
+            a{
+                color: white !important;
+                &:hover{
+                    color: white !important;
+                }
+            }
+
+            > .premier-event-secondaire{
+                display: none;
+            }
+    
+            > * {
+                position: relative;
+                flex: 1 0 auto;
+                display: flex;
+                align-items: center;
+    
+                max-height: 50%;
+    
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+    
+                /*margin: 10px 0;*/
+                box-sizing: border-box;
+    
+                &:after{
+                    z-index: 0;
+                    position: absolute;
+                    content: " ";
+                    box-sizing: border-box;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(to right, rgba(#000, 0.9), rgba(#AAA, 0.3));
+                    border: 0px solid rgba(#000, 0);
+                    /*transform: translateX(-2px);*/
+                }
+    
+                &:hover:after{
+                    border: 2px solid rgba(#FFF, 0.75);
+                }
+    
+                h2{
+                    z-index: 2;
+                    vertical-align: middle;
+                    margin: 20px;
+                    text-shadow: 1px 1px 5px black !important;
+    
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    #ve-evenements > .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .parent-evenement{
+        display: none !important;
+        height: 350px !important;
+    }
+
+    .autres-evenements {
+        > .premier-event-secondaire{
+            display: flex !important;
+        }
+
+        > *{
+            height: 200px;
+            margin: 5px 10px;
+            border: 3px solid rgba(#FFF, 1);
+
+            &:after{
+                background: linear-gradient(to right, rgba(#000, 0.95), rgba(#AAA, 0.5)) !important;
+            }
+
+            h2{
+                display: block;
+                font-weight: bold;
+                font-size: 40px;
+                margin: 0 auto !important;
+                padding: 10px;
+                text-shadow: 1px 1px 10px black !important;
+            }
+
+            &:hover{
+                border-color: #CCC !important;
+            }
+            &:hover:after{
+                border: none !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    #ve-evenements > .container{
+        padding: 0;
+    }
+
+    .parent-evenement{
+        height: 275px !important;
+    }
+
+    .autres-evenements > *{
+        height: 160px;
+        h2{
+            font-size: 30px;
+            white-space: auto;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@import "vie-au-tim/evenements";
+
+.vie-au-tim{
+    //margin-top: 40px;
+    overflow-x: hidden;
+    > div {
+        min-height: 100vh !important;
+        max-width: 1280px;
+        margin: 40px auto;
+        > h1{
+            margin: 0 40px;
+            font-size: 46px;
+            border-bottom: 4px solid white;
+            border-image-slice: 1;
+            border-image-source: linear-gradient(to right, rgba(#FFF, 0.5), rgba(#FFF, 0));
+        
+            /*&:before{
+                display: inline-block;
+                content: " ";
+                margin-right: 10px;
+                vertical-align: middle;
+                width: 10px;
+                height: 10px;
+                background-color: white;
+                border-radius: 2px;
+                box-shadow: 0 0 10px white;
+            }*/
+        }
+    }
+}
