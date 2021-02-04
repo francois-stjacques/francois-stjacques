@@ -64,6 +64,10 @@ section {
     border-color: #C0C0C0;
     /* background-color: rgba(107, 1, 41, 0.67); */
 }
+
+h4 a img {
+    width: 4%;
+}
 /*==============================
 NAVBAR STYLES
 ==============================*/
