@@ -69,13 +69,13 @@ section {
     padding: 0;
 }
 
-section:nth-child(1) {
+/* section:nth-child(1) {
     background-color: lightcyan;
 }
 
 section:nth-child(3) {
     background-color: aliceblue;
-}
+} */
 
 h3 {
     cursor: pointer;
