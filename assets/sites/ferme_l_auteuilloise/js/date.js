@@ -30,6 +30,7 @@ minute = "0" +minute;
 if (seconde < 10) {
 seconde = "0" +seconde;
 }
+
 takeDate += heure + ":" + minute + ":" + seconde;
 document.getElementById("jourActuel").innerHTML = takeDate;
 }
