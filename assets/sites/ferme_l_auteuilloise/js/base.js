@@ -52,6 +52,6 @@ function cacheImg() {
         // var semaine = journee.getDay();
         var js = arJour[journee.getDay()];
         var m = mois[journee.getMonth()];
-        var s = journee.toLocaleTimeString();
+        var s = journee.toLocaleTimeString([], {timeStyle: 'short'});
         document.getElementById("jourActuel").innerHTML = (js + " " + journee.getDate() + " " + m + " " + journee.getFullYear() + " " + s);
     }
