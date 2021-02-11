@@ -1,0 +1,27 @@
+/* Animation de la cloche qui se déplace de gauche à droite en changent de couleur */
+
+.photo img:nth-child(2):hover {
+	animation-name: vibration;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes vibration {
+	from {
+		transform: translateX(0) rotate(0deg);
+	}
+
+	25% {
+		transform: translateX(9em) rotate(15deg);
+		background: gold;
+	}
+
+	75% {
+		transform: translateX(-6em) rotate(-15deg);
+		background: gold;
+	}
+
+	to {
+		transform: translateX(0) rotate(0deg);
+	}
+}
