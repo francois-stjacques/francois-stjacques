@@ -1,12 +1,132 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - François St-Jacques</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
-</body>
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Portfolio - François St-Jacques</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/style.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<header>
+			<ul>
+				<li><a href="#/accueil">Accueil</a></li>
+				<li><a href="#/realisations">Réalisations</a></li>
+				<li><a href="#/apropos">À propos de moi</a></li>
+				<li><a href="#/contact">Contact</a></li>
+			</ul>
+		</header>
+		<div class="reveal">
+			<div class="slides">
+				<section data-transition="concave" data-transition-speed="fast" id="accueil">
+					
+					<section id="accueil1">
+						<h2 class="centrer">Programmation web</h2>
+						<h4 class="centrer">HTML/CSS/JavaScript</h4><br>
+						Étudiant en multimédia au Collège de Maisonneuve (2017-2021), j'ai appris les rudiments de la programmation web
+						et appris à aller plus loin. En quatre ans d'études, je codes en HTML/css et JavaScript. J'ai utilisé WordPress
+						pour refaire le site du département. Mon site est refaite avec Reveal.js.<br>
+						<!-- <section data-markdown>
+							<textarea data-template>
+	
+							</textarea>
+						</section> -->
+						<a href="#/accueil-suite">Pour connaître la raison de mon amour pour les chats</a>
+					</section>
+					<section id="accueil-suite">
+						Je me passionne à la programmation depuis que je suis en secondaire 1<br>
+						<a href="#/accueil1">Retour à la page d'accueil</a>
+					</section>
+				</section>
+
+				<!-- <section data-background-color="orange">Le changement de couleur d'arrière plan <br>
+					La couleur d'arrière-plan peut être facilement changer avec l'attribut « data-background-color » sans changer complètement le thème</section> -->
+
+				<section data-transition="concave" data-transition-speed="fast">
+					<section id="realisations" class="scrollable" data-transition="convex">Mes réalisations<br>
+						<a href="travaux/animation_css/index.html" target="_blank"><img src="travaux/animation_css.JPG" alt="">Animation de base en css</a>
+						<a href="travaux/ferme_l_auteuilloise/index.html" target="_blank"><img src="travaux/ferme_accueil.JPG" alt="">Ferme Auteuilloise</a><br>
+						<a href="#/realisation">Voir plus</a>
+					</section>
+					<section id="realisation" data-transition="convex">
+						<a href="#/realisations">Retour vers les autres réalisations</a><br><br>
+						<a href="#" target="_blank"><img src="travaux/tim_accueil.JPG" alt="">Page d'accueil du TIM</a>
+						<a href="travaux/space_invader/index.html" target="_blank"><img src="travaux/space_invader.JPG" alt="">Space Invader</a>
+					</section>
+					<!-- <section data-transition="zoom">Et sa suite <br> (Oh, quelle hasard!)</section>
+					<section id="chat">Et encore plus bas <br> (Ça descend beaucoup, on peut remonter maintenant)</section> -->
+				</section>
+				<section data-transition="zoom">
+					<section id="apropos" class="scrollable">
+						<h2 class="centrer">À propos</h2>
+						<a href="travaux/ferme_l_auteuilloise/index.html" target="_blank">
+							<img src="images/chaton.jpeg" alt="">
+						</a>
+						<p>Étudiant en multimédia (2017-2021)<br> (La suite de la présentation des chats suit plus bas)</p>
+						<aside class="notes">Les notes de la première page sont ici (mais dans une autre diapo)!</aside>
+					<!-- </section>
+					<section> -->
+						J'ai commencé mes études en multimédia en 2017 et je termine en 2021. J'avais eu une base en secondaire 1 et 2,
+						cependant, ses notions se sont perdus et je suis retourné approfondir mon HTML/CSS.
+					</section>
+				</section>
+				<section data-transition="zoom" id="contact">Contact<br>(On remonte sur la première ligne horizontale)</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Effet
+						Le « textarea » et le « data-template » permettent d'avoir des textes plus gros, les # avant le titre sont l'équivalent des h1 à h6
+						
+						## Exemple
+						En dessous de la ligne de code, il y a 3 trait d'union, ce qui permet de grossir le texte de celui-ci
+						---
+						<aside class="notes">Dans un <i>textarea</i>, on peut ajouter des # avant un mot (un titre en général) et ça a le même effet que les balises h1-h6</aside>
+					</textarea>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<!-- <script>
+			// code pris de: https://www.raymondcamden.com/2021/01/29/quick-hack-for-revealjs-presentations
+			let note = document.querySelectorAll('aside.notes');
+			note.forEach(n => {
+				let html = n.innerHTML;
+				html = html.trim().replace(/\n/g, '<br>/>');
+				n.innerHTML = html;
+			});
+		</script> -->
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// La flèche de controle
+				controls: false,
+
+				// La barre de progression
+				progress: false,
+
+				// Numéro de page/diapo
+				// slideNumber: 'c',
+				
+				// Mis en page qui va être étiré de chaque côté de la page avec true
+				// disableLayout: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
 </html>
