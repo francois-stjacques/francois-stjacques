@@ -1,0 +1,3 @@
+Pour que le site puisse fonctionner correctement et voir les différentes pages, il est préférable d'ouvrir à partir d'un serveur, tel qu'à partir de l'éditeur Bracket.
+Seul la page principale est nécessaire pour ouvrir.
+Ce travail a été réalisé en équipe, bien que les aliens ne tirent pas, ils ont un effet lorsqu'ils touchent le vaisseau.
