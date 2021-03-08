@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Signika&display=swap);
+section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
+  color: grey; }
+
+:root {
+   --background-color: lightcyan;
+   --main-font: Roboto, sans-serif;
+   --main-font-size: 1.5em;
+   --main-color: #000;
+   --block-margin: 20px;
+   --heading-margin: 0 0 20px 0;
+   --heading-font: ;
+   --heading-color: #000;
+   --heading-line-height: 1.2;
+   --heading-letter-spacing: normal;
+   --heading-text-transform: none;
+   --heading-text-shadow: none;
+   --heading-font-weight: normal;
+   --heading1-text-shadow: none;
+   --heading1-size: 3.77em;
+   --heading2-size: 2.11em;
+   --heading3-size: 1.55em;
+   --heading4-size: 1em;
+   --heading5-size: .83em;
+   --heading6-size: .67em;
+   --code-font: monospace;
+   --link-color: indigo;
+   --link-color-hover: indigo;
+   --selection-background-color: lightcyan;
+}
+
+.reveal-viewport {
+    background: lightcyan;
+    background-color: lightcyan;
+}
+
+.reveal {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    font-weight: normal;
+    color: black;
+}
+
+.reveal .slides section, .reveal .slides section > section {
+    line-height: 1.2;
+    font-weight: inherit;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+    margin: 0 0 20px 0;
+    color: black;
+    font-family: "Signika", sans-serif;
+    font-weight: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    word-wrap: break-word;
+}
+
+.reveal strong,
+.reveal b {
+  font-weight: bold;
+}
+
+.reveal h1 {
+    font-size: 3.77em; 
+}
+  
+  .reveal h2 {
+    font-size: 2.11em;
+    }
+  
+  .reveal h3 {
+    font-size: 1.55em;
+    }
+  
+  .reveal h4 {
+    font-size: 1em; 
+    }
+  
+  .reveal h5 {
+    font-size: .83em;
+    }
+
+  .reveal h6 {
+    font-size: .67em;
+   }
+
+   .reveal h1:last-child, .reveal h2:last-child, .reveal h3:last-child,
+   .reveal h4:last-child, .reveal h5:last-child, .reveal h6:last-child {
+     margin-bottom: 0; }
+
+.reveal a {
+    color: aquamarine;
+    text-decoration: none;
+    transition: color .30s ease;
+}
+
+.reveal a:hover {
+    color: aqua;
+    text-decoration: none;
+}
+
+/* Flèche directionnel et bar de progression  */
+
+.reveal .progress {
+    color: darkslategrey;
+}
+
+.reveal .progress {
+    background: darkgray;
+    color: yellow;
+}

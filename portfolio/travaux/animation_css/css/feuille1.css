@@ -1,0 +1,311 @@
+/* Source des caractères: https://www.dafont.com/fr/search.php?q=roboto */
+
+@font-face {
+	font-family: roboto;
+	src: url(../fonts/Roboto-Regular.ttf);
+}
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	font-family: 'Roboto';
+	background-color: lightgreen;
+}
+
+header img {
+	height: 5em;
+	width: 5em;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display: inline-block;
+}
+
+/* Titre qui s'anime */
+#entete {
+	margin: 0;
+	padding: 0;
+	font-size: 1.5em;
+	text-align: center;
+	color: blue;
+	animation-name: titre;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+/* .icone barre qui contient les effets pour l'écran, les effets sont appliqués à travers
+le fichier javascript: apps.js */
+.icone {
+	background: limegreen;
+}
+
+.icone li {
+	margin-left: 2.5em;
+	padding: 0.25em;
+	padding-top: 0;
+	padding-bottom: 0;
+	font-size: 1.75em;
+	border: 0.3em solid green;
+	border-radius: 100%;
+	cursor: pointer;
+	display: inline-flex;
+	align-content: center;
+}
+
+.icone li:hover {
+	background: white;
+	transition-duration: 1s;
+}
+
+/* Le troisième et le cinquième bouton tournent sur eux-même */
+.icone li:nth-child(3):hover {
+	transform: rotate(-360deg);
+	transition-duration: 2s;
+}
+
+.icone li:nth-child(5):hover {
+	transform: rotate(360deg);
+	transition-duration: 2s;
+}
+
+hr {
+	margin: 0;
+	margin-left: 1.5%;
+	padding: 0;
+	align-items: center;
+	border: 1.5px solid skyblue;
+}
+
+/* Le footer n'est pas toujours au bas de la page pour les écrans de taille plus petite */
+footer {
+	width: 100%;
+	height: 7.5%;
+	margin: 0;
+	padding: 0;
+	font-family: roboto;
+	font-size: 2em;
+	text-align: center;
+	background: lightblue;
+}
+
+/* .bouton et .bloc inspirés et/ou pris des notes du cours 2 de la semaine 5 */
+.bouton {
+	background: linear-gradient(to bottom, black 0%, black 20%, transparent 20%, transparent 40%, black 40%, black 60%, transparent 60%, transparent 80%, black 80%, black 100%);
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	transition-duration: 2s;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+}
+
+#bloc:checked ~.icone{
+	transform: translateX(0%);
+}
+
+#bloc:checked ~.bouton{
+	transform: rotate(90deg);
+}
+
+
+/* Quelques difficultés pour centrer les images au milieu de la page, j'ai essayé
+les flexbox align-content, justify-content, align-items et align-self, aucun ne semblait
+fonctionner, j'ai placé des valeurs pour les centrer le plus possible */
+
+/* Les animations de la classe .photo img, sont réparties dans quatre autres documents css,
+soit: anim1.css, anim2.css, anim3.css et anim4.css */
+
+/*.photo {
+	display: inline-flex;
+	align-content: center;
+}*/
+
+.photo img {
+	width: 14em;
+	margin-top: 1em;
+	margin-left: 1em;
+	padding: 1.5em;
+	border: 15px solid black;
+	border-radius: 20px 20px;
+	cursor: pointer;
+	/*display: inline-flex;
+	justify-content: center;
+	align-content: center;*/
+}
+
+.photo img:nth-child(1) {
+	margin-left: 39.75em;
+}
+
+.photo img:nth-child(4) {
+	margin-left: 39.75em;
+}
+
+/* Les classes .lumiere, .pinceau, .rotation et .zoom correspondent aux effets
+des quatre éléments centraux qui s'appliquent sur la page, elle s'appuit sur la page
+javascript apps.js pour fonctionner */
+
+.lumiere {
+	opacity: 0.5;
+	background: grey;
+	filter: grayscale(75%);
+	transition-duration: 3s;
+}
+
+.pinceau {
+	background: salmon;
+	transition-duration: 3s;
+}
+
+.rotation {
+	transform: rotate(180deg);
+	transition-duration: 3s;
+}
+
+.zoom {
+	transform: scale(1.25);
+	transition-duration: 3s;
+}
+
+/* Keyframes du titre animé */
+@keyframes titre {
+	from {
+		color: blue;
+	}
+
+	25% {
+		color: green;
+		transform: skewX(25deg) translateX(1em);
+	}
+
+	50% {
+		color: orange;
+	}
+
+	75% {
+		color: red;
+		transform: skewX(-25deg) translateX(-1em);
+	}
+
+	90% {
+		color: purple;
+	}
+
+	to {
+		color: blue;
+	}
+}
+
+	/* Ajustement pour les écrans de 300px à 699px (petit) */
+@media screen and (min-width: 300px) {
+		body {
+			/*width: 100%;
+			height: 100%;*/
+		}
+		
+		/* .icone, .icone li et #bloc sont inspirés et/ou pris des notes du cours 2 de la semaine 5 */
+		.icone {
+			flex-grow: 1;
+			transform: translateX(-100%);
+			transition: transform 2s;
+		}
+
+		.icone li {
+			font-size: 1.2em;
+		}
+
+		#bloc {
+			display: none;
+		}
+
+		.photo img {
+		width: 50%;
+		}
+
+		.photo img:nth-child(1) {
+		margin-top: 8em;
+		margin-left: 0em;
+		}
+
+		.photo img:nth-child(4) {
+		margin-left: 0em;
+		}
+	}
+
+		/* Ajustement pour les écrans de 700px à 1024px (moyen) */
+		@media screen and (min-width: 700px) {
+			body {
+			/*width: 100%;
+			height: 100%;*/
+		}
+		
+		/* .icone et #bloc inspirés et/ou pris des notes du cours 2 de la semaine 5 */
+		.icone {
+			flex-grow: 1;
+			transform: translateX(-100%);
+			transition: transform 2s;
+			font-size: 1.15em;
+		}
+
+		#bloc {
+			display: none;
+		}
+
+		.photo img {
+			width: 35%;
+		}
+
+		.photo img:nth-child(1) {
+			margin-top: 8em;
+			margin-left: 0em;
+		}
+
+		.photo img:nth-child(4) {
+			margin-left: 0em;
+		}
+	}
+
+	/* Ajustement pour les écrans de 1025px et plus (grand écran) */
+	@media screen and (min-width: 1025px) {
+		body {
+
+		}
+
+		/* .icone, .bouton et #bloc sont inspirés et/ou pris des notes du cours 2 de la semaine 5 */
+		.icone {
+			transform: translateX(0%);
+			font-size: 2em;
+		}
+
+		.bouton {
+			display: none;
+		}
+
+		#bloc {
+			display: none;
+		}
+
+		.photo img {
+			width: 14em;
+		}
+
+		.photo img:nth-child(1) {
+			margin-top: 0;
+			margin-left: 39.75em;
+		}
+
+		.photo img:nth-child(4) {
+			margin-left: 39.75em;
+		}
+	}

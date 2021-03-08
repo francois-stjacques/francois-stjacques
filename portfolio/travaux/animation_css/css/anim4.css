@@ -1,0 +1,23 @@
+/* Animation du nuage qui monte et qui descend en disparaissant et en revenant */
+
+.photo img:nth-child(5):hover {
+	animation-name: opacite;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes opacite {
+	from {
+		opacity: 100%;
+	}
+
+	50% {
+		opacity: 0;
+		transform: translateY(-225px);
+	}
+
+	to {
+		opacity: 100%;
+		transform: translateY(0);
+	}
+}

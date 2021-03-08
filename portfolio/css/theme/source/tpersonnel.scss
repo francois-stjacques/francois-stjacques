@@ -1,0 +1,24 @@
+/**
+    Création d'un thème scss
+*/
+
+// Importation par défault
+@import "../template/mixins";
+@import "../template/settings";
+
+// Importation des caractères d'écriture
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Signika&display=swap);
+
+// Propriété du thème qui vont être utilisés dans la section :root
+$mainFont: 'Roboto', sans-serif;
+$mainColor: black;
+$headingFont: 'Signika', sans-serif;
+$headingColor: seagreen;
+$headingTextShadow: none;
+$backgroundColor: lightcyan;
+$linkColor: indigo;
+$linkColorHover: lighten( $linkColor, 17.5% );
+$selectionBackgroundColor: lightCyan;
+
+// Importation du template thème
+@import "../template/theme.scss";
