@@ -54,6 +54,7 @@ hr {
     opacity: 75%;
   }
 
+/* Code inspiré de: https://github.com/hakimel/reveal.js/issues/118 */
 .defilement {
     margin-top: 22.5%;
     overflow-y: auto !important;
@@ -74,6 +75,7 @@ hr {
     height: 100%;
 }
 
+/* Pris d'un forum: https://css-tricks.com/forums/topic/hide-vertical-scrollbar-but-still-scrollable/ */
 ::-webkit-scrollbar {
     display: none;
 }
@@ -135,6 +137,14 @@ p {
     width: 25%;
     margin: 0 15px 0 0;
     float: left;
+    opacity: 0.7;
+    filter: grayscale(1);
+}
+
+#realisations img:hover {
+    opacity: 1;
+    transition-duration: 1s;
+    filter: grayscale(0);
 }
 
 #realisations1 {

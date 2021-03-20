@@ -1,3 +1,8 @@
+/* 
+    Thème créée de mon cru, les éléments sont inspirés de thèmes existants
+    afin de maximiser le potentiel de mon thème.
+*/
+
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Signika&display=swap);
 section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
   color: grey; }
@@ -90,13 +95,13 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
      margin-bottom: 0; }
 
 .reveal a {
-    color: aquamarine;
+    color: darkgreen;
     text-decoration: none;
     transition: color .30s ease;
 }
 
 .reveal a:hover {
-    color: aqua;
+    color: darkgreen;
     text-decoration: none;
 }
 

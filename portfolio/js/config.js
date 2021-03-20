@@ -1,3 +1,5 @@
+import toaster from "../plugin/toaster/toaster";
+
 /**
  * The default reveal.js config object.
  */
@@ -288,6 +290,6 @@ export default {
 	dependencies: [],
 
 	// Plugin objects to register and use for this presentation
-	plugins: []
+	plugins: [toaster]
 
 }

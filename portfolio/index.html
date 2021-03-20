@@ -20,6 +20,7 @@
 			<ul>
 				<li><a href="#/accueil1">Accueil</a></li>
 				<li><a href="#/apropos">À propos de moi</a></li>
+				<li><a href="#/concretisation">Compétences</a></li>
 				<li><a href="#/realisations">Réalisations</a></li>
 				<li><a href="#/contact">Contact</a></li>
 			</ul>
@@ -36,20 +37,21 @@
 							<img src="images/analytique.jpg" alt="">
 						</div>
 						<br><br>
-						<a href="#/apropos">À propos &#8595;</a>
+						<!-- <a href="#/apropos">À propos &#8595;</a> -->
 					</section>
 
 						<section id="apropos" class="defilement">
 							<h2 class="centrer"><strong>À propos</strong></h2>
 							<img src="images/bureau-maison.jpg" alt="">
-							<p class="fragment fade-out">
+							<p>
 								Étudiant en multimédia au Collège de Maisonneuve (2017-2021), j'ai appris les rudiments de la programmation web
 								et appris à aller plus loin. En quatre ans d'études, je codes en HTML/CSS et JavaScript. J'ai utilisé WordPress
 								pour refaire le site du département. Mon portfolio est faite avec Reveal.js. Je me passionne à la programmation depuis que je suis en secondaire 1.
 								J'avais eu une base en secondaire 1 et 2, cependant, ses notions se sont perdus et je suis retourné approfondir mon HTML/CSS.
-							</p><br><br>
-							<a href="#/accueil1">Retour à la page d'accueil &#8593;</a><br>
-							<a href="#/competences">Vers mes compétences et réalisations &#8594;</a>
+							</p>
+							<!-- <br><br> -->
+							<!-- <a href="#/accueil1">Retour à la page d'accueil &#8593;</a><br> -->
+							<!-- <a href="#/competences">Vers mes compétences et réalisations &#8594;</a> -->
 						</section>
 
 				</section>
@@ -86,8 +88,9 @@
 						<div>
 							<img src="images/WordPress.png" alt="WordPress" title="WordPress">
 							<p>WordPress est un gestionnaire de contenu dont je me sers pour faciliter la gestion de sites web.</p>
-						</div><br><br><br><br><br>
-						<a href="#/realisations">Vers mes réalisations &#8595;</a>
+						</div>
+						<!-- <br><br><br><br><br> -->
+						<!-- <a href="#/realisations">Vers mes réalisations &#8595;</a> -->
 					</section>
 					<section id="realisations" class="defilementdiv" data-transition="convex">
 						Mes réalisations<br>
@@ -122,9 +125,9 @@
 							<br clear="both">
 								<br>
 						</div>
-						<a href="#/competences">Retour vers mes compétences &#8593;</a><br>
-						<a href="#/contact">Contact &#8594;</a><br>
-						<a href="#/realisations1">Continuer vers mes autres réalisations (vidéo) &#8595;</a>
+						<!-- <a href="#/competences">Retour vers mes compétences &#8593;</a><br>
+						<a href="#/contact">Contact &#8594;</a><br> -->
+						<a href="#/realisations1">Continuer vers mes autres réalisations (vidéo)</a>
 					</section>
 					<section id="realisations1" class="defilementdiv" data-transition="convex">
 						<div>
@@ -144,10 +147,11 @@
 								Réalisation d'une vidéo en 3d qui agit comme publicité pour le TIM. Les trois lettres de l'acronyme sautent
 								et présentent la vie au TIM.
 								<br clear="both">
-						</div><br>
+						</div>
+						<!-- <br>
 						<a href="#/competences">Retour vers mes compétences &#8593;&#8593;</a><br>
-						<a href="#/realisations1">Retour vers mes autres réalisations &#8593;</a><br>
-						<a href="#/contact">Contact &#8594;</a>
+						<a href="#/contact">Contact &#8594;</a> -->
+						<a href="#/realisations">Retour vers mes autres réalisations</a><br>
 					</section>
 				</section>
 				<section data-transition="zoom" id="contact" class="defilementdiv1">Contact<br>
@@ -157,7 +161,7 @@
 							<img src="images/email.png" alt="Enveloppe courriel">
 						</a><br>
 						<a href="https://www.linkedin.com/in/françois-st-jacques-783750a9" target="_blank"><img src="images/linkedin.png" alt="Logo de LinkedIn" title="Profil LinkedIn"></a><br><br>
-						<a href="#/accueil1">Retour à la page d'accueil &#8592;&#8592;</a>
+						<!-- <a href="#/accueil1">Retour à la page d'accueil &#8592;&#8592;</a> -->
 					</h4>
 				</section>
 			</div>
@@ -167,12 +171,14 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<link href="plugin/toaster/toaster.js" />
 
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
+				// Maximisé la page, inspiré de: https://medium.com/myplanet-musings/building-a-responsive-reveal-js-theme-399179632cc6
 				width: "75%",
 				height: "100%",
 				margin: 0,
@@ -186,6 +192,12 @@
 
 				// La barre de progression
 				progress: false,
+
+				// Permet la navigation pour les appareils avec écran tactile
+				Touch: true,
+
+				// Éviter que les notes de présentation soient visible par les utilisateurs
+				showNotes: false,
 
 				// autoPlayMedia: false,
 
