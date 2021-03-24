@@ -1,0 +1,34 @@
+/**
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is darkblue.
+ *
+ * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
+ * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Signika&display=swap);
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Roboto', sans-serif;
+$mainColor: black;
+$mainFontSize: 1.5em;
+$headingFont: 'Signika', sans-serif;
+$headingColor: seagreen;
+$headingTextShadow: none;
+$backgroundColor: lightcyan;
+$linkColor: indigo;
+$linkColorHover: lighten( $linkColor, 17.5% );
+$selectionBackgroundColor: lightCyan;
+
+// Importation du template thème
+@import "../template/theme.scss";
+// ---------------------------------------------

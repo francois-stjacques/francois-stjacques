@@ -1,0 +1,242 @@
+section {
+    text-align: justify;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 50%;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    background-color: mediumseagreen;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.reveal {
+    position: relative;
+    z-index: 0;
+}
+
+.reveal section a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin: auto;
+    padding: 0% 2.5% 0% 2.5%;
+}
+
+hr {
+    margin: auto;
+    width: 97.5%;
+    background-color: mediumturquoise;
+    border-radius: 5px;
+    height: 2px;
+    opacity: 75%;
+  }
+
+/* Code inspiré de: https://github.com/hakimel/reveal.js/issues/118 */
+.defilement {
+    margin-top: 22.5%;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    height: 100%;
+}
+
+.defilementdiv {
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    height: 100%;
+}
+
+.defilementdiv1 {
+    margin-top: 8%;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    height: 100%;
+}
+
+/* Pris d'un forum: https://css-tricks.com/forums/topic/hide-vertical-scrollbar-but-still-scrollable/ */
+::-webkit-scrollbar {
+    display: none;
+}
+
+img {
+    width: 30%;
+    height: 30%;
+}
+
+.reveal section img {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#apropos {
+    margin-top: 0;
+    background-color: paleturquoise;
+    border-radius: 10px;
+    box-shadow: grey 2.5px 5px 25px 10px;
+    height: auto;
+    padding: 2%;
+}
+
+#apropos img {
+    float: right;
+    opacity: 95%;
+    width: 40%;
+    margin-left: 2.5%;
+}
+
+#competences {
+    margin-top: 0%;
+    background-color: paleturquoise;
+    border-radius: 10px;
+    box-shadow: grey 2.5px 5px 25px 10px;
+    height: auto;
+}
+
+#competences img {
+    width: 5em;
+    height: auto;
+    float: left;
+    margin-bottom: 1%;
+}
+
+#realisations {
+    padding: 2%;
+    height: auto;
+    background-color: paleturquoise;
+    border-radius: 10px;
+    box-shadow: grey 2.5px 5px 25px 10px;
+}
+
+#realisations img {
+    width: 25%;
+    margin: 0 15px 0 0;
+    float: left;
+}
+
+#realisations1 {
+    padding: 2%;
+    height: auto;
+    background-color: paleturquoise;
+    border-radius: 10px;
+    box-shadow: grey 2.5px 5px 25px 10px;
+}
+
+iframe {
+    position: relative;
+    width: 22.5%;
+    float: left;
+    margin-right: 1%;
+}
+#accueil1 h2 {
+    font-size: 5em;
+}
+
+#accueil h4 {
+    font-size: 3.5em;
+}
+
+#concretisation {
+    margin-top: 1.5%;
+}
+
+#concretisation img {
+    max-width: 20%;
+}
+
+#cercle {
+    background-image: linear-gradient(to right, lightcyan, springgreen, lightcyan);
+    border-radius: 15px;
+    text-align: center;
+}
+
+#cercle img {
+    opacity: 80%;
+}
+
+#contact {
+    text-align: center;
+    background-color: paleturquoise;
+    border-radius: 10px;
+    padding: 2%;
+    margin-top: 0;
+    height: auto;
+    box-shadow: grey 2.5px 5px 25px 10px;
+}
+
+#contact a img {
+    display: inline-block;
+    margin: 0 5px;
+    min-width: 10%;
+    max-width: 12.5%;
+}
+
+@media only screen and (max-width: 768px) {
+    .reveal .slides {
+        font-size: 80%;
+    }
+
+    #cercle {
+        margin-top: 15%;
+        font-size: 80%;
+    }
+
+    #concretisation {
+        font-size: 55%;
+    }
+    
+    #concretisation div a {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #concretisation img {
+        min-width: 100px;
+        margin-top: 0;
+    }
+
+    #realisations {
+        margin-top: 5%;
+        font-size: 150%;
+    }
+
+    #realisations1 {
+        margin-top: 5%;
+        font-size: 150%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    #apropos img {
+        width: 100%;
+    }
+}
