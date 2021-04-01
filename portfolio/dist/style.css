@@ -26,7 +26,11 @@ header a {
 
 #competences p {
     margin-left: 9.5%;
-    margin-right: 2%;
+    margin-right: 4%;
+}
+
+#competences p:nth-child(3) {
+    padding-left: 5%;
 }
 
 .reveal {
@@ -256,11 +260,19 @@ iframe {
     }
 
     #competences p {
-        padding-left: 35%;
+        padding-left: 14%;
         padding-right: 2.5%;
+    }
+
+    #competences p:nth-child(3) {
+        padding-left: 32.5%;
     }
 
     #apropos img {
         width: 100%;
+    }
+
+    li a {
+        font-size: small;
     }
 }
