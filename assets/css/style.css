@@ -76,9 +76,9 @@ NAVBAR STYLES
     font-size: 20px;
     text-transform: uppercase;
 }
-.navbar-brand {
+/* .navbar-brand {
     padding:0px;
-}
+} */
 
 .navbar-brand:hover {
     animation-name: nom;
